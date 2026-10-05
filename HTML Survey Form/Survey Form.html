@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Customer Service Survey</h1>
+    <p id="description">We appreciate your feedback for helping us improve!</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" id="name" placeholder="Full Name" required> <br>
+
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" placeholder="example123@email.com" required> <br>
+
+      <label id="number-label" for="number">Age (optional):</label>
+      <input type="number" id="number" placeholder="Age" min="5" max="100"> <br>
+
+      <p>How would you rate your experience as a customer?</p>
+      <select id="dropdown">
+        <option value="poor">Poor</option>
+        <option value="average">Average</option>
+        <option value="good">Good</option>
+        <option value="excellent" selected>Excellent</option>
+      </select>
+
+      <p>Would you be open to doing business with us again in the future?</p>
+      <input type="radio" id="yes-button" name="yes-or-no" value="yes">
+      <label for="yes-button">Yes</label>
+      <input type="radio" id="no-button" name="yes-or-no" value="no">
+      <label for="no-button">Not Likely</label>
+
+      <p>Which of these areas do you feel that we need to improve upon?</p>
+      <input type="checkbox" id="time-box" value="time">
+      <label for="time-box">Response Time</label>
+      <input type="checkbox" id="price-box" value="price">
+      <label for="price-box">Pricing</label>
+      <input type="checkbox" id="accessibility-box" value="accessibility">
+      <label for="accessibility-box">Accessibility</label>
+      <input type="checkbox" id="communication-box" value="communication">
+      <label for="communication-box">Communication</label>
+      <input type="checkbox" id="staff-box" value="staff">
+      <label for="staff-box">Staff Professionalism</label>
+      <input type="checkbox" id="products-box" value="products">
+      <label for="products-box">Products/Services</label>
+      <input type="checkbox" id="assistance-box" value="assistance">
+      <label for="assistance-box">Staff Assistance</label>
+
+      <p>If you have any particular comments or suggestions for us, please type them below:</p>
+      <textarea rows="8" cols="40">Comments & suggestions here...</textarea> <br>
+
+      <button id="submit" type="submit">Submit Survey</button>
+    </form>
+  </body>
+</html>
